@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>T.A. Locações - Aluguel de Caçambas e Andaimes em Maricá/RJ</title>
-    <meta name="description" content="Aluguel de caçambas estacionárias e andaimes em Maricá RJ. Entrega rápida, preço justo e descarte licenciado. Atendemos obras, condomínios e residências.">
-    <meta name="keywords" content="caçambas estacionárias Maricá, aluguel caçambas RJ, andaimes Maricá, descarte entulho RJ">
+    <meta name="description" content="Aluguel de caçambas estacionárias e andaimes em Maricá RJ. Entrega rápida, preço justo e descarte licenciado.">
     <style>
         * {
             margin: 0;
@@ -21,7 +20,6 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             color: #333;
-            background-color: #f5f5f5;
         }
         
         .container {
@@ -32,8 +30,8 @@
         
         /* HEADER */
         .header {
-            background: #ffffff;
-            padding: 1.2rem 0;
+            background: #fff;
+            padding: 1rem 0;
             position: fixed;
             width: 100%;
             top: 0;
@@ -50,9 +48,8 @@
         .logo {
             display: flex;
             align-items: center;
-            gap: 12px;
+            gap: 10px;
             text-decoration: none;
-            color: #1e3a8a;
         }
         
         .logo img {
@@ -61,127 +58,85 @@
         }
         
         .logo-text h2 {
-            font-size: 1.5rem;
-            margin: 0;
+            font-size: 1.4rem;
             color: #1e3a8a;
+            margin: 0;
         }
         
         .logo-text small {
             display: block;
-            font-size: 0.85rem;
             color: #fbbf24;
-            font-weight: 600;
+            font-size: 0.8rem;
         }
         
         nav {
             display: flex;
             gap: 2rem;
-            align-items: center;
         }
         
         nav a {
             color: #333;
             text-decoration: none;
             font-weight: 500;
-            transition: color 0.3s ease;
+            transition: color 0.3s;
         }
         
         nav a:hover {
             color: #2563eb;
         }
         
-        /* HERO SECTION */
+        /* HERO */
         .hero {
-            background: linear-gradient(rgba(37, 99, 235, 0.85), rgba(37, 99, 235, 0.85)), url('caminhao.jpeg') center/cover no-repeat;
+            background: linear-gradient(rgba(37, 99, 235, 0.8), rgba(37, 99, 235, 0.8)), url('caminhao.jpeg') center/cover;
             height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
             text-align: center;
             color: white;
-            margin-top: 80px;
-            position: relative;
-        }
-        
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(37, 99, 235, 0.4);
+            margin-top: 70px;
         }
         
         .hero-content {
-            position: relative;
-            z-index: 2;
             max-width: 800px;
         }
         
         .hero h1 {
             font-size: 3.5rem;
-            margin-bottom: 1.5rem;
+            margin-bottom: 1rem;
             font-weight: 700;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-            animation: slideDown 0.8s ease-out;
         }
         
         .hero p {
-            font-size: 1.8rem;
+            font-size: 1.5rem;
             margin-bottom: 2rem;
-            font-weight: 300;
-            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
-        }
-        
-        @keyframes slideDown {
-            from {
-                opacity: 0;
-                transform: translateY(-30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
         }
         
         .btn {
             display: inline-block;
-            padding: 16px 40px;
+            padding: 15px 40px;
             background: #fbbf24;
             color: #1e3a8a;
             text-decoration: none;
             border-radius: 8px;
             font-weight: 700;
-            transition: all 0.3s ease;
-            border: 2px solid #fbbf24;
+            border: none;
             cursor: pointer;
+            transition: all 0.3s;
             font-size: 1.1rem;
         }
         
         .btn:hover {
             background: #f59e0b;
-            border-color: #f59e0b;
             transform: translateY(-2px);
             box-shadow: 0 10px 20px rgba(0,0,0,0.2);
         }
         
-        .btn-secondary {
-            background: transparent;
-            color: white;
-            border: 2px solid white;
-        }
-        
-        .btn-secondary:hover {
-            background: white;
-            color: #1e3a8a;
-        }
-        
         /* BENEFICIOS */
         .beneficios {
-            background: #ffffff;
-            padding: 60px 0;
-            margin-top: -40px;
+            background: white;
+            padding: 50px 0;
+            margin-top: -30px;
             position: relative;
             z-index: 10;
         }
@@ -189,32 +144,25 @@
         .beneficios-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 40px;
-            margin-bottom: 40px;
+            gap: 30px;
         }
         
-        .beneficio-card {
+        .beneficio {
             text-align: center;
-            padding: 30px;
+            padding: 20px;
         }
         
         .beneficio-icon {
-            font-size: 3rem;
-            margin-bottom: 15px;
-        }
-        
-        .beneficio-card h3 {
-            color: #1e3a8a;
+            font-size: 2.5rem;
             margin-bottom: 10px;
-            font-size: 1.3rem;
         }
         
-        .beneficio-card p {
-            color: #666;
-            font-size: 1rem;
+        .beneficio h3 {
+            color: #1e3a8a;
+            margin-bottom: 8px;
         }
         
-        /* SERVIÇOS */
+        /* SERVICOS */
         .servicos {
             padding: 80px 0;
             background: #f9fafb;
@@ -222,16 +170,15 @@
         
         .servicos h2 {
             text-align: center;
-            font-size: 2.8rem;
+            font-size: 2.5rem;
             color: #1e3a8a;
             margin-bottom: 1rem;
         }
         
-        .servicos-subtitulo {
+        .servicos-desc {
             text-align: center;
             color: #666;
-            margin-bottom: 4rem;
-            font-size: 1.1rem;
+            margin-bottom: 3rem;
             max-width: 600px;
             margin-left: auto;
             margin-right: auto;
@@ -239,7 +186,7 @@
         
         .service-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 30px;
         }
         
@@ -249,29 +196,27 @@
             border-radius: 12px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.08);
             text-align: center;
-            transition: all 0.3s ease;
+            transition: transform 0.3s;
         }
         
         .service-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
         }
         
         .service-icon {
-            font-size: 3.5rem;
-            margin-bottom: 20px;
+            font-size: 3rem;
+            margin-bottom: 15px;
         }
         
         .service-card h3 {
-            font-size: 1.4rem;
-            margin-bottom: 15px;
             color: #1e3a8a;
+            margin-bottom: 15px;
+            font-size: 1.3rem;
         }
         
         .service-card p {
             color: #666;
             margin-bottom: 20px;
-            font-size: 0.95rem;
         }
         
         .service-card ul {
@@ -279,13 +224,12 @@
             list-style: none;
         }
         
-        .service-card ul li {
+        .service-card li {
             padding: 8px 0;
             color: #555;
-            font-size: 0.95rem;
         }
         
-        .service-card ul li:before {
+        .service-card li:before {
             content: "✓ ";
             color: #22c55e;
             font-weight: bold;
@@ -294,44 +238,42 @@
         
         /* ATENDEMOS */
         .atendemos {
-            background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+            background: linear-gradient(135deg, #2563eb, #1e40af);
             color: white;
-            padding: 60px 0;
+            padding: 50px 0;
             text-align: center;
         }
         
         .atendemos h2 {
-            font-size: 2rem;
             margin-bottom: 2rem;
+            font-size: 2rem;
         }
         
         .atendemos-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
             gap: 20px;
         }
         
         .atendemos-item {
-            font-size: 1.1rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
+            font-size: 1.05rem;
         }
         
         .atendemos-item span {
             font-size: 1.8rem;
+            display: block;
+            margin-bottom: 8px;
         }
         
         /* DEPOIMENTOS */
         .depoimentos {
             padding: 80px 0;
-            background: #ffffff;
+            background: white;
         }
         
         .depoimentos h2 {
             text-align: center;
-            font-size: 2.8rem;
+            font-size: 2.5rem;
             color: #1e3a8a;
             margin-bottom: 3rem;
         }
@@ -347,13 +289,11 @@
             padding: 30px;
             border-radius: 12px;
             border-left: 4px solid #fbbf24;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
         }
         
         .depoimento-texto {
             color: #555;
-            font-size: 1rem;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
             font-style: italic;
         }
         
@@ -370,14 +310,14 @@
         /* CONTATO */
         .contato {
             padding: 80px 0;
-            background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
+            background: linear-gradient(135deg, #1e3a8a, #1e40af);
             color: white;
         }
         
         .contato h2 {
             text-align: center;
-            font-size: 2.8rem;
-            margin-bottom: 3rem;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
         }
         
         .contato-container {
@@ -395,11 +335,6 @@
             border: none;
             border-radius: 6px;
             font-size: 1rem;
-            font-family: inherit;
-        }
-        
-        .form-control::placeholder {
-            color: #aaa;
         }
         
         .contato-info {
@@ -410,24 +345,21 @@
         }
         
         .contato-info p {
-            margin-bottom: 15px;
-            font-size: 1.05rem;
+            margin-bottom: 10px;
         }
         
         .contato-info strong {
-            display: block;
             color: #fbbf24;
-            margin-bottom: 5px;
         }
         
-        /* WHATSAPP FLUTUANTE */
-        .whatsapp-flutuante {
+        /* WHATSAPP */
+        .whatsapp-btn {
             position: fixed;
             bottom: 20px;
             right: 20px;
             background: #25D366;
             color: white;
-            padding: 16px 20px;
+            padding: 15px 20px;
             border-radius: 50px;
             text-decoration: none;
             display: flex;
@@ -435,11 +367,11 @@
             gap: 10px;
             z-index: 999;
             box-shadow: 0 5px 20px rgba(37, 211, 102, 0.4);
-            transition: all 0.3s ease;
+            transition: all 0.3s;
             font-weight: 600;
         }
         
-        .whatsapp-flutuante:hover {
+        .whatsapp-btn:hover {
             transform: scale(1.1);
             box-shadow: 0 8px 25px rgba(37, 211, 102, 0.6);
         }
@@ -452,11 +384,7 @@
             padding: 40px 0;
         }
         
-        .footer p {
-            margin-bottom: 10px;
-        }
-        
-        /* RESPONSIVE */
+        /* MOBILE */
         @media (max-width: 768px) {
             nav {
                 gap: 1rem;
@@ -464,33 +392,19 @@
             }
             
             .hero h1 {
-                font-size: 2.2rem;
+                font-size: 2rem;
             }
             
             .hero p {
-                font-size: 1.3rem;
-            }
-            
-            .servicos h2 {
-                font-size: 2rem;
-            }
-            
-            .depoimentos h2 {
-                font-size: 2rem;
+                font-size: 1.2rem;
             }
             
             .service-grid {
                 grid-template-columns: 1fr;
             }
             
-            .btn {
-                padding: 12px 30px;
-                font-size: 1rem;
-            }
-            
-            .whatsapp-flutuante {
-                padding: 14px 16px;
-                font-size: 0.9rem;
+            .depoimentos-grid {
+                grid-template-columns: 1fr;
             }
         }
     </style>
@@ -501,5 +415,72 @@
         <div class="container">
             <div class="header-content">
                 <a href="#home" class="logo">
-                    <img src="logo.jpeg" alt="T.A. Locações Logo">
-                    <div class="
+                    <img src="logo.jpeg" alt="Logo">
+                    <div class="logo-text">
+                        <h2>T.A. Serviços</h2>
+                        <small>Locações</small>
+                    </div>
+                </a>
+                <nav>
+                    <a href="#home">Início</a>
+                    <a href="#servicos">Serviços</a>
+                    <a href="#contato">Contato</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <!-- HERO -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>T.A. SERVIÇOS E LOCAÇÕES</h1>
+            <p>Sua obra mais limpa, sua cidade mais verde</p>
+            <a href="https://wa.me/5521998824612" class="btn">Solicitar Orçamento</a>
+        </div>
+    </section>
+    
+    <!-- BENEFICIOS -->
+    <section class="beneficios">
+        <div class="container">
+            <div class="beneficios-grid">
+                <div class="beneficio">
+                    <div class="beneficio-icon">⚡</div>
+                    <h3>Entrega Rápida</h3>
+                    <p>No mesmo dia</p>
+                </div>
+                <div class="beneficio">
+                    <div class="beneficio-icon">💰</div>
+                    <h3>Preço Justo</h3>
+                    <p>Melhor custo-benefício</p>
+                </div>
+                <div class="beneficio">
+                    <div class="beneficio-icon">🌱</div>
+                    <h3>Descarte Licenciado</h3>
+                    <p>100% ambientalmente correto</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- SERVIÇOS -->
+    <section id="servicos" class="servicos">
+        <div class="container">
+            <h2>Nossos Serviços</h2>
+            <p class="servicos-desc">Soluções completas para sua obra com qualidade, segurança e responsabilidade ambiental.</p>
+            
+            <div class="service-grid">
+                <div class="service-card">
+                    <div class="service-icon">🗑️</div>
+                    <h3>Aluguel de Caçambas Estacionárias</h3>
+                    <p>Caçambas para entulho, madeira, gesso, barro e resíduos de obra. Diversos tamanhos disponíveis.</p>
+                    <ul>
+                        <li>Entrega no mesmo dia</li>
+                        <li>Troca mediante solicitação</li>
+                        <li>Locação flexível</li>
+                        <li>Todos os tipos de resíduo</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">🪜</div>
+                    <h3>Aluguel de Andaimes</h
