@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T.A. Locações - Aluguel de Caçambas e Andaimes em Maricá/RJ</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        .header { background: #fff; padding: 1rem 0; position: fixed; width: 100%; top: 0; z-index: 1000; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .header-content { display: flex; justify-content: space-between; align-items: center; }
+        .logo { display: flex; align-items: center; gap: 10px; }
+        .logo-circle { width: 50px; height: 50px; background: #FBBF24; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 24px; }
+        .hero { background: linear-gradient(rgba(37,99,235,0.8), rgba(37,99,235,0.8)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%23e5e7eb" width="1200" height="600"/><text x="600" y="300" text-anchor="middle" font-size="40" fill="%23999">Caminhão de Caçamba</text></svg>'); height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; color: white; margin-top: 80px; }
+        .hero h1 { font-size: 3rem; margin-bottom: 1rem; }
+        .btn { display: inline-block; padding: 15px 30px; background: #FBBF24; color: #1e3a8a; text-decoration: none; border-radius: 8px; font-weight: bold; }
+        .services { padding: 80px 0; background: #f9fafb; }
+        .service-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 50px; }
+        .service-card { background: white; padding: 40px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); text-align: center; }
+        .service-icon { font-size: 4rem; margin-bottom: 20px; }
+        .whatsapp { position: fixed; bottom: 20px; right: 20px; background: #25D366; color: white; padding: 15px 20px; border-radius: 50px; text-decoration: none; display: flex; align-items: center; gap: 10px; z-index: 1000; }
+        .contact { padding: 60px 0; background: #1e3a8a; color: white; }
+        .form-group { margin-bottom: 20px; }
+        .form-control { width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 6px; }
+        .footer { background: #1e3a8a; color: white; text-align: center; padding: 30px 0; }
+        @media(max-width: 768px) { .hero h1 { font-size: 2rem; } .service-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-circle">🔄</div>
+                    <div>
+                        <h2>T.A. Serviços</h2>
+                        <small>Locações</small>
+                    </div>
+                </div>
+                <nav>
+                    <a href="#home" style="margin: 0 15px; color: #333; text-decoration: none;">Início</a>
+                    <a href="#servicos" style="margin: 0 15px; color: #333; text-decoration: none;">Serviços</a>
+                    <a href="#contato" style="margin: 0 15px; color: #333; text-decoration: none;">Contato</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>T.A. SERVIÇOS E LOCAÇÕES</h1>
+            <p style="font-size: 1.5rem; margin-bottom: 2rem;">Sua obra mais limpa, sua cidade mais verde</p>
+            <a href="https://wa.me/5521998824612" class="btn">Solicitar Orçamento no WhatsApp</a>
+        </div>
+    </section>
+
+    <section id="servicos" class="services">
+        <div class="container">
+            <h2 style="text-align: center; font-size: 2.5rem; color: #1e3a8a; margin-bottom: 1rem;">Nossos Serviços</h2>
+            <p style="text-align: center; color: #666; margin-bottom: 3rem;">Soluções completas para sua obra com qualidade, segurança e responsabilidade ambiental.</p>
+            
+            <div class="service-grid">
+                <div class="service-card">
+                    <div class="service-icon">🗑️</div>
+                    <h3>Aluguel de Caçambas Estacionárias</h3>
+                    <p>Caçambas para entulho, madeira, gesso, barro e resíduos de obra. Diversos tamanhos disponíveis.</p>
+                    <ul style="text-align: left; margin-top: 20px;">
+                        <li>✓ Entrega no mesmo dia</li>
+                        <li>✓ Troca mediante solicitação</li>
+                        <li>✓ Locação flexível</li>
+                        <li>✓ Todos os tipos de resíduos</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">🪜</div>
+                    <h3>Aluguel de Andaimes</h3>
+                    <p>Andaimes seguros e certificados para obras pequenas e grandes. Montagem e desmontagem inclusos.</p>
+                    <ul style="text-align: left; margin-top: 20px;">
+                        <li>✓ Normas de segurança</li>
+                        <li>✓ Montagem profissional</li>
+                        <li>✓ Locação flexível</li>
+                        <li>✓ Manutenção inclusa</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">♻️</div>
+                    <h3>Descarte Ambientalmente Correto</h3>
+                    <p>Destinação licenciada e sustentável para todos os resíduos coletados, seguindo normas ambientais.</p>
+                    <ul style="text-align: left; margin-top: 20px;">
+                        <li>✓ 100% licenciado</li>
+                        <li>✓ Processo sustentável</li>
+                        <li>✓ Conformidade legal</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="contact">
+        <div class="container">
+            <h2 style="text-align: center; font-size: 2.5rem; margin-bottom: 2rem;">Solicite seu Orçamento</h2>
+            <div style="max-width: 600px; margin: 0 auto;">
+                <form action="https://wa.me/5521998824612" method="get" target="_blank">
+                    <div class="form-group">
+                        <input type="text" name="text" class="form-control" placeholder="Digite seu pedido (ex: Preciso de uma caçamba para obra em Maricá)" required>
+                    </div>
+                    <button type="submit" class="btn" style="width: 100%; border: none; cursor: pointer;">Enviar para WhatsApp</button>
+                </form>
+                
+                <div style="text-align: center; margin-top: 40px;">
+                    <p style="margin-bottom: 10px;"><strong>📱 WhatsApp:</strong> (21) 99882-4612</p>
+                    <p style="margin-bottom: 10px;"><strong>📧 Email:</strong> t.alocacoes@talocacoes.com</p>
+                    <p style="margin-bottom: 10px;"><strong>📍 Instagram:</strong> @t.alocacoesservicos</p>
+                    <p><strong>🏙️ Atendimento:</strong> Maricá - RJ</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <a href="https://wa.me/5521998824612" class="whatsapp">
+        <span>📱</span>
+        <span>WhatsApp</span>
+    </a>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 T.A. Serviços e Locações. Todos os direitos reservados.</p>
+            <p style="margin-top: 10px; font-style: italic;">"Sua obra mais limpa, sua cidade mais verde"</p>
+        </div>
+    </footer>
+</body>
+</html>
